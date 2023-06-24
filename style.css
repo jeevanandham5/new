@@ -1,0 +1,242 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("hero.webp") no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.hero nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  z-index: 99;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background: none;
+  border-radius: 50%;
+  margin-left: 20%;
+}
+
+.content a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 40px 10px 10px;
+  color: #fff;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
+
+h1 span {
+  font-size: 3em;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+  margin-left: 10%;
+  color: black;
+  text-transform: uppercase;
+}
+
+h1 span:nth-child(2) {
+  color: navy;
+  font-size: 5em;
+}
+
+.history {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  background: url(mountains.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.history nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 100px;
+  background-color: #fff;
+}
+
+.history .logo {
+  border: 2px solid;
+}
+
+.history h5 {
+  transform: translateX(-190%);
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.history h5 span {
+  color: black;
+  font-weight: 700;
+}
+
+.history h5 span:nth-child(2) {
+  color: navy;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.history a {
+  color: black;
+}
+
+.history h1 {
+  margin-left: 25%;
+  transform: translateY(-170%);
+  font-size: 5em;
+  font-weight: bold;
+  transform: translate(-50% -50%);
+  opacity: 0.5;
+}
+
+.history h2 {
+  position: absolute;
+  left: 32%;
+  top: 25%;
+  color: navy;
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+.history p {
+  position: absolute;
+  left: 28%;
+  top: 32%;
+  width: 50%;
+  font-size: 1em;
+  opacity: 0.8;
+  color: navy;
+}
+
+.box {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: blue;
+  width: 100%;
+  height: 200px;
+  opacity: 0.5;
+}
+
+.slider {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+}
+.slider-item {
+    flex: 0 0 100%;
+    width: 100%;
+    height: 100%;
+  }
+
+.slides {
+  width: 60%;
+  height: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  transition: 2s;
+}
+
+.slide img {
+  width: 200px;
+  height: 150px;
+  padding: 10px;
+}
+
+.navigation {
+  position: absolute;
+  left: 0;
+  bottom: 3%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.navigation div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation div:not(:last-child) {
+  margin-right: 10px;
+}
+
+#radio1:checked ~ .navigation .auto-btn {
+  background: black;
+}
+
+#radio2:checked ~ .navigation .auto-btn {
+  background: black;
+}
+
+#radio3:checked ~ .navigation .auto-btn {
+  background: black;
+}
+.slider-controls button {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #888;
+  margin: 0 5px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slider-controls button.active {
+  background-color: #333;
+}
+.img {
+  width: 150px;
+  height: 100px;
+}
